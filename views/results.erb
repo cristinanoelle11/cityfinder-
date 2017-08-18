@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>City Finder</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/one-page-wonder.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">City Finder</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
+                </li>
+                
+               
+            </ul>
+        </div>
+    </nav>
+
+    <header class="masthead">
+        <div class="overlay">
+            <div class="container">
+                <h1 class="display-1 text-white"> <%=@destination[:name]%></h1>
+                <h5 class="display-5 text-white"> <%=@destination[:description]%></h5>
+            </div>
+        </div>
+    </header>
+
+<div class = "all_containers" style="background: #AD989A; color: Black;">
+    <section>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 order-2">
+                    <div class="p-5">
+                        <a href="<%=@destination[:link1]%>"> <img class="img-fluid rounded-circle" alt="image" src="<%=@destination[:img1]%>"></a>
+  
+                    </div>
+                </div>
+                <div class="col-md-6 order-1">
+                    <div class="p-5">
+                   <div class="questions">
+  
+            <h2 class="display-4"><td> Transportation</td></h2>
+            <h4><%=@destination[:description_t]%> </h4>
+        
+            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<div class = "all_containers" style="background: #FFDEE1; color: Black;">
+    <section>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="p-5">
+                         <a href="<%=@destination[:link2]%>"> <img class="img-fluid rounded-circle" alt="image" src="<%=@destination[:img2]%>"></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-5">
+                        <h2 class="display-4"> <td> Hotels</td></h2>
+                        <h4><%=@destination[:description_h]%></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+    
+<div class = "all_containers" style="background: #CC757E; color: Black;">
+    <section>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 order-2">
+                    <div class="p-5">
+                         <a href="<%=@destination[:link3]%>"> <img class="img-fluid rounded-circle" alt="image" src="<%=@destination[:img3]%>"></a>
+                        
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <div class="p-5">
+                        <h2 class="display-4" style="text-align:center"><td>Food</td></h2>
+                        <h4><%=@destination[:description_f]%></h4>
+            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<div class = "all_containers" style="background: #FF929D; color: Black;">
+    
+    <section>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="p-5">
+                         <a href="<%=@destination[:link4]%>"> <img class="img-fluid rounded-circle" alt="image" src="<%=@destination[:img4]%>"></a>
+                          <h4> </h4>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-5">
+                        <h2 class="display-4"> <td>Sights to Visit</td></h2>
+                        <h4><%=@destination[:description_s]%></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+        
